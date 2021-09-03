@@ -18,7 +18,7 @@
                     Margin="0,16,16,0"
                     TextColor="White"
                     FontSize="24"
-                    Text="{x:Static local:FontAwesomeSolid.CheckCircle}"
+                    Text="{x:Static local:FontAwesomeSolid.CheckCircle}" 
                     HorizontalOptions="End"
                     VerticalOptions="Start"
                     />
