@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PlaceAppMobile.MainPage"
+             xmlns:local="clr-namespace:PlaceAppMobile"
+             Padding="0,50,0,0">
+
+    <StackLayout Margin="26,0">
+        <Frame 
+            Padding="0" 
+            HeightRequest="250"
+            CornerRadius="10"
+            >
+            <Grid>
+                <Image Aspect="AspectFill" Source="https://lorempixel.com/640/480/city/"/>
+                <Label
+                    FontFamily="FontAwesomeFreeSolid"
+                    Margin="0,16,16,0"
+                    TextColor="White"
+                    FontSize="24"
+                    Text="{x:Static local:FontAwesomeSolid.CheckCircle}"
+                    HorizontalOptions="End"
+                    VerticalOptions="Start"
+                    />
+            </Grid>
+           
+        </Frame>
+        <Grid 
+          
+            ColumnSpacing="20"
+            HeightRequest="80">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="50"/>
+            </Grid.ColumnDefinitions>
+           
+            <StackLayout 
+                Grid.Column="0"
+               
+                VerticalOptions="Center"
+                >
+
+                <Label Text="Ocean at Algarve"/>
+                <Label Text="Enjoy view over blue ocean from room" LineBreakMode="TailTruncation"/>
+            </StackLayout>
+            <Frame 
+                VerticalOptions="Center"
+                Padding="0"
+                Grid.Column="1"
+               
+                HeightRequest="60"
+                WidthRequest="10">
+                <StackLayout Spacing="0" VerticalOptions="Center">
+                    <Label Text="18" HorizontalTextAlignment="Center"/>
+                    <Label Text="Aug" HorizontalTextAlignment="Center"/>
+                </StackLayout>
+            </Frame>
+        </Grid>
+    </StackLayout>
+
+</ContentPage>
